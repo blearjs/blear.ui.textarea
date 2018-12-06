@@ -27,7 +27,7 @@ var defaults = {
     maxHeight: 400,
 
     /**
-     * 监听的键盘事件
+     * 监听的键盘事件，事件可以为空，高度更新由使用放自行控制
      */
     keyEvent: 'input'
 };
@@ -74,13 +74,17 @@ var Textarea = UI.extend({
         the[_extraHeight] = boxSizing === 'border-box'
             ? getSize('border-top-width') + getSize('border-bottom-width')
             : 0;
-        event.on(
-            the[_textareaEl],
-            keyEvent,
-            the[_autoUpdateHeightListener] = function () {
-                the.updateHeight();
-            }
-        );
+
+        if (keyEvent) {
+            event.on(
+                the[_textareaEl],
+                keyEvent,
+                the[_autoUpdateHeightListener] = function () {
+                    the.updateHeight();
+                }
+            );
+        }
+
         the.updateHeight();
         return the;
     },
