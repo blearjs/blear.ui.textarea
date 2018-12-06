@@ -1,0 +1,48 @@
+{
+  "name": "blear.ui.textarea",
+  "version": "1.0.0",
+  "description": "textarea UI 类（自适应撑高、自适应滚动）",
+  "scripts": {
+    "live": "browser-sync start --config bs-config.js"
+  },
+  "preferGlobal": false,
+  "bin": {},
+  "engines": {
+    "node": ">=6.0.0",
+    "iojs": ">=1.0.0"
+  },
+  "main": "src/index.js",
+  "keywords": [
+    "blear",
+    "cloudcome",
+    "ydr.me"
+  ],
+  "author": {
+    "name": "cloudcome",
+    "email": "cloudcome@163.com",
+    "url": "https://ydr.me"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/blearjs/blear.ui.textarea",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blearjs/blear.ui.textarea"
+  },
+  "bugs": {
+    "url": "https://github.com/blearjs/blear.ui.textarea/issues"
+  },
+  "dependencies": {
+    "blear.core.attribute": "^1.0.14",
+    "blear.core.event": "^1.1.5",
+    "blear.core.layout": "^1.0.7",
+    "blear.core.selector": "^1.0.11",
+    "blear.ui": "^1.0.10",
+    "blear.utils.number": "^1.0.3",
+    "blear.utils.object": "^1.0.14"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "coolie.js": "2.3.1"
+  },
+  "license": "MIT"
+}
