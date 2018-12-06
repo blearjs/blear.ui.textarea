@@ -1,6 +1,6 @@
 {
   "name": "blear.ui.textarea",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "textarea UI 类（自适应撑高、自适应滚动）",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
