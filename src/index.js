@@ -104,7 +104,7 @@ var Textarea = UI.extend({
         attribute.style(the[_textareaEl], 'height', '');
         var autoHeight = layout.scrollHeight(the[_textareaEl]) + the[_extraHeight];
         var height = Math.min(autoHeight, maxHeight);
-        the.emit('autoHeight', height);
+        the.emit('updateHeight', height);
         attribute.style(
             the[_textareaEl],
             'height',
