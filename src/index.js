@@ -114,15 +114,10 @@ var Textarea = UI.extend({
         return the;
     },
 
-    autoScroll: function () {
-
-    },
-
     destroy: function () {
         var the = this;
 
         the.autoHeight(false);
-        the.autoScroll(false);
     }
 });
 Textarea.defaults = defaults;

@@ -12,7 +12,8 @@ var Textarea = require('../src/index');
 
 
 var t = new Textarea({
-    el: '#demo'
+    el: '#demo',
+    maxHeight: 200
 });
 
 t.autoHeight();
